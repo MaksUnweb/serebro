@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+        <div class="calculate">
+            <h1>Добро пожаловать в калькулятор!</h1>
+            <div class="calc">
+        <form id="form">
+            <label for="a" id="label-a"><strong>Введите A:</strong></label>
+            <input type="number" name="a" id="a" required>
+            <select id="operator">
+                <option value="+">Сложить</option>
+                <option value="-">Вычесть</option>
+                <option value="/">Разделить</option>
+                <option value="*">Умножить</option>
+            </select>
+            <label for="b" id="label-b"><strong>Введите B:</strong></label>
+            <input type="number" name="b" id="b" required>
+            <button type="submit" id="submit"><strong>Решить</strong></button>
+        </form>
+        <h3>Результат: <span id="result"></span></h3>
+    </div>
+    </div>
+
+    <script>
+        const form = document.querySelector("#form");
+        form.addEventListener('submit', rek, true);
+
+        function rek(e){
+            e.preventDefault(); // Используйте e вместо event
+            let a = parseFloat(document.querySelector("#a").value);
+            let b = parseFloat(document.querySelector("#b").value);
+            let operator = document.querySelector("#operator").value;
+
+
+            let result = calc(a, b, operator);
+            let res = document.querySelector("#result"); 
+            res.textContent = result; 
+        }
+
+        function calc(a, b, operator) {
+            if (a !== null && a !== undefined && b !== null && b !== undefined) {
+                switch(operator) {
+                    case "+":
+                        return a + b; 
+                    case "-":
+                        return a - b; 
+                    case "*":
+                        return a * b; 
+                    case "/":
+                        return a / b;
+                    default:
+                        return "Неизвестный оператор"; 
+                }
+            } else {
+                return "Значение ошибка"; 
+            }
+        }
+    </script>
+</body>
+</html>
