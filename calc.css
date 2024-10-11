@@ -189,3 +189,193 @@ select{
     }
 }
 
+@media(max-width: 400px){
+
+    body{
+        overflow-y: hidden; /* Запретит вертикальную прокрутку */
+    overflow-x: hidden;
+    }
+    
+
+    h1{
+        position: absolute;
+        font-size: 20px;
+        margin-top: 10%;
+        width: 200px;
+    
+    }
+    
+    .calculate{
+
+    }
+    
+    
+    .calc{
+        padding: 20px;
+        width: 80%;
+        margin-top: 35%;
+        
+        backdrop-filter: blur(50px);
+    }
+    
+    #form{
+        height: 250px;
+        
+        padding: 30px;
+    
+    }
+    
+    
+    #label-a{
+        font-size: 20px;
+        margin-left: 5%;
+    }
+    
+    select{
+        border: 4px;
+        border-radius: 10px;
+        border-color: black;
+        border-style: solid;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        background-color: transparent;
+        margin-left: 10%;
+    }
+    
+    
+    #label-b{
+        margin-top: 10%;
+        font-size: 20px;
+        margin-left: 10%;
+    }
+    
+    #a{
+        border: 4px;
+        border-radius: 10px;
+        border-color: black;
+        border-style: solid;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        background-color: transparent;
+    }
+    
+    #b{
+        border: 4px;
+        border-radius: 10px;
+        border-color: black;
+        border-style: solid;
+        background-color: transparent;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    
+    
+    #submit{
+        background-color: transparent;
+        font-size: 20px;
+        margin-left: 15%;
+        margin-top: 10%;
+        transition: 0.4s;
+    }
+    
+    
+    #submit:hover{
+        color: white;
+    }
+}
+
+
+@media(max-width: 450px){
+
+    body{
+        overflow-y: hidden; /* Запретит вертикальную прокрутку */
+    overflow-x: hidden;
+    }
+    
+
+    h1{
+        position: absolute;
+        font-size: 20px;
+        margin-top: 10%;
+        width: 200px;
+    
+    }
+    
+    .calculate{
+
+    }
+    
+    
+    .calc{
+        padding: 20px;
+        width: 80%;
+        margin-top: 35%;
+        
+        backdrop-filter: blur(50px);
+    }
+    
+    #form{
+        height: 250px;
+        
+        padding: 30px;
+    
+    }
+    
+    
+    #label-a{
+        font-size: 20px;
+        margin-left: 5%;
+    }
+    
+    select{
+        border: 4px;
+        border-radius: 10px;
+        border-color: black;
+        border-style: solid;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        background-color: transparent;
+        margin-left: 10%;
+    }
+    
+    
+    #label-b{
+        margin-top: 10%;
+        font-size: 20px;
+        margin-left: 10%;
+    }
+    
+    #a{
+        border: 4px;
+        border-radius: 10px;
+        border-color: black;
+        border-style: solid;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        background-color: transparent;
+    }
+    
+    #b{
+        border: 4px;
+        border-radius: 10px;
+        border-color: black;
+        border-style: solid;
+        background-color: transparent;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    
+    
+    #submit{
+        background-color: transparent;
+        font-size: 20px;
+        margin-left: 15%;
+        margin-top: 10%;
+        transition: 0.4s;
+    }
+    
+    
+    #submit:hover{
+        color: white;
+    }
+}
